@@ -173,7 +173,7 @@ public class BioSystem {
 
             double migRate = randBac.getB();
             double deaRate = randBac.getD();
-            double repliRate = randBac.replicationRate(c, s, s_max, K_prime);
+            double repliRate = randBac.replicationRate(c, s);
             double R_max = 1.2;
             double rando = rand.nextDouble()*R_max;
 
@@ -250,8 +250,8 @@ public class BioSystem {
         double alpha = input_alpha;
         int S = 500;
 
-        String filename = "realisticFastGrowers-alpha-"+String.valueOf(alpha)+"-spatialDistribution-precise";
-        String filenameGRates = "realisticFastGrowers-alpha-"+String.valueOf(alpha)+"-gRateDistribution-precise";
+        String filename = "realisticFastGrowers-alpha-"+String.valueOf(alpha)+"-spatialDistribution";
+        String filenameGRates = "realisticFastGrowers-alpha-"+String.valueOf(alpha)+"-gRateDistribution";
         //String filenameNutrients = "realisticFastGrowers-alpha-"+String.valueOf(alpha)+"-nutrientDistribution-precise";
         boolean alreadyRecorded = false;
 

@@ -3,6 +3,6 @@ public class FastBacMain {
     //growth curves
     public static void main(String[] args){
         double specific_alpha = Math.log(11.5)/500.;
-        BioSystem.spatialAndNutrientDistributions(0.02);
+        BioSystem.spatialAndNutrientDistributions(0.05);
     }
 }
